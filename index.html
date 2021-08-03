@@ -8,14 +8,23 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <!-- MDB -->
     <script src="https://kit.fontawesome.com/7f2cb48dfe.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/readMoreJS.min.js"></script>
     <title>Instagram Clone</title>
 </head>
 
 <body>
     <header>
         <!-- ==================navbar===================  -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-nav mb-5">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-nav mb-5">
             <div class="container px">
                 <a class="navbar-brand" href="#">
                     <img class="me-5" src="images/brand.png" alt="">
@@ -27,36 +36,36 @@
                     </form>
                 </div>
                 <div class="nav" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-nav mb-2 mb-lg-0">
                         <li class="nav-item me-2">
                             <a class="nav-link active" aria-current="page" href="#">
-                                <img src="https://img.icons8.com/material-rounded/24/000000/home.png" alt="" />
+                                <img class="nav-icon" src="https://img.icons8.com/material-rounded/24/000000/home.png" alt="" />
                             </a>
                         </li>
                         <li class="nav-item me-2">
                             <a class="nav-link" href="#">
-                                <img src="https://img.icons8.com/material-outlined/24/000000/facebook-messenger.png" alt="" />
+                                <img class="nav-icon" src="https://img.icons8.com/material-outlined/24/000000/facebook-messenger.png" alt="" />
                             </a>
                         </li>
                         <li class="nav-item me-2">
                             <a class="nav-link" href="#">
-                                <img src="images/add2.png" alt="" width="24px">
+                                <img class="nav-icon" src="images/add2.png" alt="">
                             </a>
                         </li>
                         <li class="nav-item me-2">
                             <a class="nav-link" href="#">
-                                <img src="https://img.icons8.com/material-rounded/24/000000/compass.png" />
+                                <img class="nav-icon" src="https://img.icons8.com/material-rounded/24/000000/compass.png" alt="" />
                             </a>
                         </li>
                         <li class="nav-item me-2">
                             <a class="nav-link" href="#">
-                                <img src="https://img.icons8.com/material-outlined/24/000000/like.png" />
+                                <img class="nav-icon" src="https://img.icons8.com/material-outlined/24/000000/like.png" alt="" />
                             </a>
                         </li>
 
                         <li class="nav-item me-2">
                             <a class="nav-link" href="#">
-                                <img class="profile" src="images/profile.jpg" alt="" width="24px">
+                                <img class="profile nav-icon" src="images/profile.jpg" alt="">
                             </a>
                         </li>
 
@@ -68,18 +77,575 @@
     </header>
 
     <body>
-        <section class="container mt-5">
+        <section class="container left-part">
             <div class="row">
                 <div class="col-lg-7">
-                    <div class="container">
+                    <div class="container container-carousel">
+                        <div id="carouselBasicExample" class="carousel slide carousel-bg text-center left-margin" data-mdb-ride="carousel">
+                            <!-- Controls -->
 
+                            <!-- Inner -->
+                            <div class="carousel-inner">
+                                <!-- Single item -->
+                                <div class="carousel-item active">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img class="story-image" src="images/profile1.jpg" alt="">
+                                            </div>
+
+                                            <div class="col-2">
+                                                <img class="story-image" src="images/profile2.jpg" alt="">
+                                            </div>
+
+                                            <div class="col-2">
+                                                <img class="story-image" src="images/profile3.jpg" alt="">
+                                            </div>
+                                            <div class="col-2">
+                                                <img class="story-image" src="images/profile4.jpg" alt="">
+                                            </div>
+                                            <div class="col-2">
+                                                <img class="story-image" src="images/profile6.jpg" alt="">
+                                            </div>
+                                            <div class="col-2">
+                                                <img class="story-image" src="images/profile7.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Single item -->
+                                <div class="carousel-item ">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img class="story-image" src="images/profile1.jpg" alt="">
+                                            </div>
+
+                                            <div class="col-2">
+                                                <img class="story-image" src="images/profile2.jpg" alt="">
+                                            </div>
+
+                                            <div class="col-2">
+                                                <img class="story-image" src="images/profile3.jpg" alt="">
+                                            </div>
+                                            <div class="col-2">
+                                                <img class="story-image" src="images/profile4.jpg" alt="">
+                                            </div>
+                                            <div class="col-2">
+                                                <img class="story-image" src="images/profile6.jpg" alt="">
+                                            </div>
+                                            <div class="col-2">
+                                                <img class="story-image" src="images/profile7.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Single item -->
+                                <div class="carousel-item">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img class="story-image" src="images/profile1.jpg" alt="">
+                                            </div>
+
+                                            <div class="col-2">
+                                                <img class="story-image" src="images/profile2.jpg" alt="">
+                                            </div>
+
+                                            <div class="col-2">
+                                                <img class="story-image" src="images/profile3.jpg" alt="">
+                                            </div>
+                                            <div class="col-2">
+                                                <img class="story-image" src="images/profile4.jpg" alt="">
+                                            </div>
+                                            <div class="col-2">
+                                                <img class="story-image" src="images/profile6.jpg" alt="">
+                                            </div>
+                                            <div class="col-2">
+                                                <img class="story-image" src="images/profile7.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Inner -->
+
+                            <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+                            <button class="carousel-control-next " type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+                        </div>
+                    </div>
+                    <!-- =============posts============ -->
+                    <div class="container">
+                        <div class="post ">
+                            <div class=" mt-4 mb-3 left-margin">
+                                <div class="card-header border">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img class="post-image" src="images/profile1.jpg" alt="">
+                                            <p class="ms-2 post-giver">accio_dreams</p>
+                                        </div>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn-post-modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        ...
+                                         </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered modal-width">
+                                                <div class="modal-content">
+
+                                                    <div class="modal-body text-center modal-text">
+                                                        <p class="text-danger fw-bold">Report</a>
+                                                        </p>
+                                                        <hr>
+                                                        <p class="text-danger fw-bold">Unfollow</p>
+                                                        <hr>
+                                                        <p>Go to post</p>
+                                                        <hr>
+                                                        <p>Share to..</p>
+                                                        <hr>
+                                                        <p>Copy Link</p>
+                                                        <hr>
+                                                        <p>Embed</p>
+                                                        <hr>
+                                                        <button type="button" class="btn-cancel" data-bs-dismiss="modal">Close</button>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card-bodys">
+                                    <img class="img-fluid" src="images/post-1.jpg" alt="" width="100%" height="613px">
+                                    <div class="mt-2 d-flex justify-content-between">
+                                        <div>
+                                            <a href=""><i class="far fa-heart post-reaction ms-2"></i></a>
+                                            <a href=""><i class="far fa-comment post-reaction comment ms-2"></i></a>
+                                            <a href=""><img class="ms-2" src="images/send.png" alt="" width="20px"></a>
+                                        </div>
+                                        <a href=""><img class="me-3" src="images/save.png" alt="" width="25px"></a>
+                                    </div>
+                                    <p class="ms-2">3 likes</p>
+                                    <div class="read-more">
+                                        <p class="ms-2"><strong>accio_dreams</strong>Last date of order 9th August <br> Delivery in September 1st week.
+
+                                        </p>
+
+                                    </div>
+                                    <small class=" ms-2 text-uppercase">18 hours ago</small>
+                                </div>
+                                <div class="card-footer bg-transparent border d-flex justify-content-between">
+                                    <div>
+                                        <a href=""><i class="far fa-smile"></i></a>
+                                        <input type="text" placeholder="Add a comment..">
+                                    </div>
+                                    <div class="post-btn">
+                                        <small>Post</small>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="post ">
+                            <div class=" mt-4 mb-3 left-margin">
+                                <div class="card-header border">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img class="post-image" src="images/profile4.jpg" alt="">
+                                            <p class="ms-2 post-giver">accio_dreams</p>
+                                        </div>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn-post-modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        ...
+                                         </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered modal-width">
+                                                <div class="modal-content">
+
+                                                    <div class="modal-body text-center modal-text">
+                                                        <p class="text-danger fw-bold">Report</a>
+                                                        </p>
+                                                        <hr>
+                                                        <p class="text-danger fw-bold">Unfollow</p>
+                                                        <hr>
+                                                        <p>Go to post</p>
+                                                        <hr>
+                                                        <p>Share to..</p>
+                                                        <hr>
+                                                        <p>Copy Link</p>
+                                                        <hr>
+                                                        <p>Embed</p>
+                                                        <hr>
+                                                        <button type="button" class="btn-cancel" data-bs-dismiss="modal">Close</button>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card-bodys">
+                                    <img class="img-fluid" src="images/post-2.jpg" alt="" width="100%" height="613px">
+                                    <div class="mt-2 d-flex justify-content-between">
+                                        <div>
+                                            <a href=""><i class="far fa-heart post-reaction ms-2"></i></a>
+                                            <a href=""><i class="far fa-comment post-reaction comment ms-2"></i></a>
+                                            <a href=""><img class="ms-2" src="images/send.png" alt="" width="20px"></a>
+                                        </div>
+                                        <a href=""><img class="me-3" src="images/save.png" alt="" width="25px"></a>
+                                    </div>
+                                    <p class="ms-2">3 likes</p>
+                                    <div class="read-more">
+                                        <p class="ms-2"><strong>accio_dreams</strong>Last date of order 9th August <br> Delivery in September 1st week.
+
+                                        </p>
+
+                                    </div>
+                                    <small class=" ms-2 text-uppercase">18 hours ago</small>
+                                </div>
+                                <div class="card-footer bg-transparent border d-flex justify-content-between">
+                                    <div>
+                                        <a href=""><i class="far fa-smile"></i></a>
+                                        <input type="text" placeholder="Add a comment..">
+                                    </div>
+                                    <div class="post-btn">
+                                        <small>Post</small>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="post ">
+                            <div class=" mt-4 mb-3 left-margin">
+                                <div class="card-header border">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img class="post-image" src="images/profile3.jpg" alt="">
+                                            <p class="ms-2 post-giver">accio_dreams</p>
+                                        </div>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn-post-modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        ...
+                                         </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered modal-width">
+                                                <div class="modal-content">
+
+                                                    <div class="modal-body text-center modal-text">
+                                                        <p class="text-danger fw-bold">Report</a>
+                                                        </p>
+                                                        <hr>
+                                                        <p class="text-danger fw-bold">Unfollow</p>
+                                                        <hr>
+                                                        <p>Go to post</p>
+                                                        <hr>
+                                                        <p>Share to..</p>
+                                                        <hr>
+                                                        <p>Copy Link</p>
+                                                        <hr>
+                                                        <p>Embed</p>
+                                                        <hr>
+                                                        <button type="button" class="btn-cancel" data-bs-dismiss="modal">Close</button>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card-bodys">
+                                    <img class="img-fluid" src="images/post-3.jpg" alt="" width="100%" height="613px">
+                                    <div class="mt-2 d-flex justify-content-between">
+                                        <div>
+                                            <a href=""><i class="far fa-heart post-reaction ms-2"></i></a>
+                                            <a href=""><i class="far fa-comment post-reaction comment ms-2"></i></a>
+                                            <a href=""><img class="ms-2" src="images/send.png" alt="" width="20px"></a>
+                                        </div>
+                                        <a href=""><img class="me-3" src="images/save.png" alt="" width="25px"></a>
+                                    </div>
+                                    <p class="ms-2">3 likes</p>
+                                    <div class="read-more">
+                                        <p class="ms-2"><strong>accio_dreams</strong>Last date of order 9th August <br> Delivery in September 1st week.
+
+                                        </p>
+
+                                    </div>
+                                    <small class=" ms-2 text-uppercase">18 hours ago</small>
+                                </div>
+                                <div class="card-footer bg-transparent border d-flex justify-content-between">
+                                    <div>
+                                        <a href=""><i class="far fa-smile"></i></a>
+                                        <input type="text" placeholder="Add a comment..">
+                                    </div>
+                                    <div class="post-btn">
+                                        <small>Post</small>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="post ">
+                            <div class=" mt-4 mb-3 left-margin">
+                                <div class="card-header border">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img class="post-image" src="images/profile9.jpg" alt="">
+                                            <p class="ms-2 post-giver">accio_dreams</p>
+                                        </div>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn-post-modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        ...
+                                         </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered modal-width">
+                                                <div class="modal-content">
+
+                                                    <div class="modal-body text-center modal-text">
+                                                        <p class="text-danger fw-bold">Report</a>
+                                                        </p>
+                                                        <hr>
+                                                        <p class="text-danger fw-bold">Unfollow</p>
+                                                        <hr>
+                                                        <p>Go to post</p>
+                                                        <hr>
+                                                        <p>Share to..</p>
+                                                        <hr>
+                                                        <p>Copy Link</p>
+                                                        <hr>
+                                                        <p>Embed</p>
+                                                        <hr>
+                                                        <button type="button" class="btn-cancel" data-bs-dismiss="modal">Close</button>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card-bodys">
+                                    <img class="img-fluid" src="images/post-4.jpg" alt="" width="100%" height="613px">
+                                    <div class="mt-2 d-flex justify-content-between">
+                                        <div>
+                                            <a href=""><i class="far fa-heart post-reaction ms-2"></i></a>
+                                            <a href=""><i class="far fa-comment post-reaction comment ms-2"></i></a>
+                                            <a href=""><img class="ms-2" src="images/send.png" alt="" width="20px"></a>
+                                        </div>
+                                        <a href=""><img class="me-3" src="images/save.png" alt="" width="25px"></a>
+                                    </div>
+                                    <p class="ms-2">3 likes</p>
+                                    <div class="read-more">
+                                        <p class="ms-2"><strong>accio_dreams</strong>Last date of order 9th August <br> Delivery in September 1st week.
+
+                                        </p>
+
+                                    </div>
+                                    <small class=" ms-2 text-uppercase">18 hours ago</small>
+                                </div>
+                                <div class="card-footer bg-transparent border d-flex justify-content-between">
+                                    <div>
+                                        <a href=""><i class="far fa-smile"></i></a>
+                                        <input type="text" placeholder="Add a comment..">
+                                    </div>
+                                    <div class="post-btn">
+                                        <small>Post</small>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="post ">
+                            <div class=" mt-4 mb-3 left-margin">
+                                <div class="card-header border">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img class="post-image" src="images/profile2.jpg" alt="">
+                                            <p class="ms-2 post-giver">accio_dreams</p>
+                                        </div>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn-post-modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        ...
+                                         </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered modal-width">
+                                                <div class="modal-content">
+
+                                                    <div class="modal-body text-center modal-text">
+                                                        <p class="text-danger fw-bold">Report</a>
+                                                        </p>
+                                                        <hr>
+                                                        <p class="text-danger fw-bold">Unfollow</p>
+                                                        <hr>
+                                                        <p>Go to post</p>
+                                                        <hr>
+                                                        <p>Share to..</p>
+                                                        <hr>
+                                                        <p>Copy Link</p>
+                                                        <hr>
+                                                        <p>Embed</p>
+                                                        <hr>
+                                                        <button type="button" class="btn-cancel" data-bs-dismiss="modal">Close</button>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card-bodys">
+                                    <img class="img-fluid" src="images/post-5.jpg" alt="" width="100%" height="613px">
+                                    <div class="mt-2 d-flex justify-content-between">
+                                        <div>
+                                            <a href=""><i class="far fa-heart post-reaction ms-2"></i></a>
+                                            <a href=""><i class="far fa-comment post-reaction comment ms-2"></i></a>
+                                            <a href=""><img class="ms-2" src="images/send.png" alt="" width="20px"></a>
+                                        </div>
+                                        <a href=""><img class="me-3" src="images/save.png" alt="" width="25px"></a>
+                                    </div>
+                                    <p class="ms-2">3 likes</p>
+                                    <div class="read-more">
+                                        <p class="ms-2"><strong>accio_dreams</strong>Last date of order 9th August <br> Delivery in September 1st week.
+
+                                        </p>
+
+                                    </div>
+                                    <small class=" ms-2 text-uppercase">18 hours ago</small>
+                                </div>
+                                <div class="card-footer bg-transparent border d-flex justify-content-between">
+                                    <div>
+                                        <a href=""><i class="far fa-smile"></i></a>
+                                        <input type="text" placeholder="Add a comment..">
+                                    </div>
+                                    <div class="post-btn">
+                                        <small>Post</small>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="post ">
+                            <div class=" mt-4 mb-3 left-margin">
+                                <div class="card-header border">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img class="post-image" src="images/profile6.jpg" alt="">
+                                            <p class="ms-2 post-giver">accio_dreams</p>
+                                        </div>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn-post-modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        ...
+                                         </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered modal-width">
+                                                <div class="modal-content">
+
+                                                    <div class="modal-body text-center modal-text">
+                                                        <p class="text-danger fw-bold">Report</a>
+                                                        </p>
+                                                        <hr>
+                                                        <p class="text-danger fw-bold">Unfollow</p>
+                                                        <hr>
+                                                        <p>Go to post</p>
+                                                        <hr>
+                                                        <p>Share to..</p>
+                                                        <hr>
+                                                        <p>Copy Link</p>
+                                                        <hr>
+                                                        <p>Embed</p>
+                                                        <hr>
+                                                        <button type="button" class="btn-cancel" data-bs-dismiss="modal">Close</button>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card-bodys">
+                                    <img class="img-fluid" src="images/post-6.jpg" alt="" width="100%" height="613px">
+                                    <div class="mt-2 d-flex justify-content-between">
+                                        <div>
+                                            <a href=""><i class="far fa-heart post-reaction ms-2"></i></a>
+                                            <a href=""><i class="far fa-comment post-reaction comment ms-2"></i></a>
+                                            <a href=""><img class="ms-2" src="images/send.png" alt="" width="20px"></a>
+                                        </div>
+                                        <a href=""><img class="me-3" src="images/save.png" alt="" width="25px"></a>
+                                    </div>
+                                    <p class="ms-2">3 likes</p>
+                                    <div class="read-more">
+                                        <p class="ms-2"><strong>accio_dreams</strong>Last date of order 9th August <br> Delivery in September 1st week.
+
+                                        </p>
+
+                                    </div>
+                                    <small class=" ms-2 text-uppercase">18 hours ago</small>
+                                </div>
+                                <div class="card-footer bg-transparent border d-flex justify-content-between">
+                                    <div>
+                                        <a href=""><i class="far fa-smile"></i></a>
+                                        <input type="text" placeholder="Add a comment..">
+                                    </div>
+                                    <div class="post-btn">
+                                        <small>Post</small>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-5">
-                    <div class="container">
-                        <div class="d-flex justify-content-between">
+                <div class="col-lg-5 right-part">
+                    <div class="container container-size ">
+                        <div class="d-flex justify-content-between right-margin">
                             <div class="d-flex align-items-center mb-4">
-                                <img class="profile me-4" src="images/profile.jpg" alt="" width="70px">
+                                <img class="profile me-4" src="images/profile.jpg" alt="" width="60px">
                                 <div class=" suggest-profile mt-2">
                                     <p>fairoozazim</p>
                                     <small>Fairooz Azim</small>
@@ -89,7 +655,7 @@
                                 <a href="">Switch</a>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between right-margin">
 
                             <div class="d-flex align-items-center">
                                 <p>Suggestions For You</p>
@@ -98,7 +664,7 @@
                                 <a href="">See All</a>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between right-margin">
                             <div class="d-flex align-items-center mb-2">
                                 <img class="profile me-4" src="images/profile1.jpg" alt="" width="50px">
                                 <div class="suggest-profile">
@@ -110,7 +676,7 @@
                                 <a href="">Follow</a>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between right-margin">
                             <div class="d-flex align-items-center mb-2">
                                 <img class="profile me-4" src="images/profile2.jpg" alt="" width="50px">
                                 <div class="suggest-profile">
@@ -122,7 +688,7 @@
                                 <a href="">Follow</a>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between right-margin">
                             <div class="d-flex align-items-center mb-2">
                                 <img class="profile me-4" src="images/profile3.jpg" alt="" width="50px" height="50px">
                                 <div class="suggest-profile">
@@ -134,7 +700,7 @@
                                 <a href="">Follow</a>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between right-margin">
                             <div class="d-flex align-items-center mb-2">
                                 <img class="profile me-4" src="images/profile4.jpg" alt="" width="50px" height="50px">
                                 <div class="suggest-profile">
@@ -145,7 +711,7 @@
                             <div class="d-flex align-items-center justify-content-center right-link">
                                 <a href="">Follow</a> </div>
                         </div>
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between right-margin">
                             <div class="d-flex align-items-center mb-4">
                                 <img class="profile me-4" src="images/profile7.jpg" alt="" width="50px" height="50px">
                                 <div class="suggest-profile">
@@ -161,9 +727,10 @@
                     </div>
                 </div>
             </div>
-
-            </div>
         </section>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+
     </body>
     <footer>
     </footer>
