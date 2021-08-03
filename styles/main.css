@@ -105,7 +105,8 @@ input:focus {
 }
 
 .right-margin {
-    margin-right: 25%;
+    margin-right: 37%;
+    margin-left: -10%
 }
 
 
@@ -113,7 +114,9 @@ input:focus {
 
 .carousel-bg {
     background-color: white;
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0px;
 }
 
 .left-margin {
